@@ -30,7 +30,7 @@ RapidSSDT 并不绑定于某一种引导方案，而是围绕 **ACPI / SSDT 补�
 
 ## 2.如何使用RapidSSDT提取本机SSDT与DSDT
 
-##### **注意事项:** 
+#####**注意事项:**  
 
 如果更改了以下任何一项，您必须重新提取、重新补丁，因为这些更改可能会导致本机ACPI（特别是SystemMemory区域）发生重大更改：
 
@@ -40,15 +40,15 @@ RapidSSDT 并不绑定于某一种引导方案，而是围绕 **ACPI / SSDT 补�
 
 - 更改硬件或内存配置
 
-##### 2.1 使用Windows提取(推荐)
+##### 2.1 使用Windows提取（推荐）
 
   - 确保使用原生Boot Manager 方式来启动Windows，如果你使用了三方引导，比如：OpenCore来引导进入Windows系统，那么提取的ACPI表几乎已经被OpenCore注入的ACPI补丁污染，并非原始ACPI表！
 
-**Win下打开RapidSSDT,找到可执行文件rapidssdt.exe,双击运行,点击【提取ACPI】按钮,即可提取本机的SSDT与DSDT.**
+**在Win环境下打开RapidSSDT，找到可执行文件rapidssdt.exe，双击运行，点击【提取ACPI】按钮，即可提取本机的SSDT与DSDT。**
 
 <img src="images/dump-win-1.png" alt="Windows" width="100%" />
 
-**Win下提取完成后,默认输出在Desktop桌面ACPIs文件夹, 同时【选择ACPIs】路径这一块,会自动选择该文件夹，后续补丁操作都将基于该文件夹.无需手动选择！！！**
+**Win下提取完成后，默认输出在Desktop桌面ACPIs文件夹，同时【选择ACPIs】路径这一块，会自动选择该文件夹，后续补丁操作都将基于该文件夹。无需手动选择！！！**
 
 <img src="images/dump-win-2.png" alt="Windows" width="100%" />
 
@@ -80,7 +80,7 @@ RapidSSDT 并不绑定于某一种引导方案，而是围绕 **ACPI / SSDT 补�
 
  平台补丁主要根据CPU类型(Intel 或 AMD) , 平台类型(台式机,笔记本,迷你主机,服务器),具体平台信息(所属哪一代)来确定需要哪些SSDT.所有这些来源于官方指南: [https://dortania.github.io/Getting-Started-With-ACPI/ssdt-platform.html#desktop](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-platform.html#desktop)
 
-<img src="images/platform-ssdt.png"  width="100%" />
+img src="images/platform-ssdt.png"  width="100%" />
 
 ## 4.如何使用RapidSSDT制作SSDT补丁
 
@@ -202,4 +202,5 @@ RapidSSDT 并不绑定于某一种引导方案，而是围绕 **ACPI / SSDT 补�
    - [acidanthera](https://github.com/acidanthera) 相关ACPI补丁指南与示例
 
    - [dortania](https://github.com/dortania) 相关ACPI补丁指南与示例 
+
 
