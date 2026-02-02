@@ -1,4 +1,4 @@
-## RapidSSDT使用指南
+
 
 - [1.RapidSSDT制作的SSDT补丁支持哪些引导](#1RapidSSDT制作的SSDT补丁支持哪些引导)
 - [2.如何使用RapidSSDT提取本机SSDT与DSDT](#2如何使用RapidSSDT提取本机SSDT与DSDT)
@@ -20,7 +20,7 @@ RapidSSDT 并不绑定于某一种引导方案，而是围绕 **ACPI / SSDT 补�
   - 生成的 SSDT 可直接放入 EFI/OC/ACPI 目录
   - 补丁命名与结构更符合 OpenCore 的使用习惯
   - 适用于当前主流 Hackintosh 配置方案
-- 🟢 **Clover** (已过时，不推荐)
+- 🟢 **Clover** **（已过时，不推荐）**
 
   - 支持 Clover 的 ACPI 补丁加载方式
   - 生成的 SSDT 可用于 EFI/CLOVER/ACPI/patched
@@ -202,4 +202,5 @@ RapidSSDT 并不绑定于某一种引导方案，而是围绕 **ACPI / SSDT 补�
    - [acidanthera](https://github.com/acidanthera) 相关ACPI补丁指南与示例
 
    - [dortania](https://github.com/dortania) 相关ACPI补丁指南与示例 
+
 
